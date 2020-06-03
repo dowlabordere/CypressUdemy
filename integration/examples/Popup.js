@@ -9,7 +9,7 @@ describe('My first Test Suite', function () {
         // popups
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
         cy.get('#displayed-text').type(name).then(function(){
-            cy.wait(2000)
+            cy.wait(3000)
             cy.get('#alertbtn').click()
         })
         cy.get('[value="Confirm"]').click()
